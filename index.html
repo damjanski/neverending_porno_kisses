@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>index</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Billy Kimble">
+	<!-- Date: 2013-01-23 -->
+
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/ui-lightness/jquery-ui-1.10.0.custom.min.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+
+</head>
+<body>
+
+
+	<div style="margin:0 auto; width: 90%; height:100%;" id="content">
+		<!-- "previous page" action -->
+		<a class="content_prev">previou</a>
+		<!-- "next page" action -->
+		<a class="content_next">next</a>
+		<!-- root element for scrollable -->
+		<div class="scrollable" id="scrollable">
+
+			<!-- root element for the items -->
+			<div class="items">
+
+				<!-- 1-5 -->
+				<div class="page" id="page1">
+					page1
+				</div>
+
+				<!-- 5-10 -->
+				<div class="page" id="page2">
+					page2
+				</div>
+
+				<!-- 10-15 -->
+				<div class="page" id="page3">
+					<a class="image_prev">previous image</a>
+					<!-- "next page" action -->
+					<a class="image_next">next image</a>
+
+<script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><a rel="nofollow" href="http://www.facebook.com/share.php?u=<;url>" onclick="return fbs_click()" target="_blank">Share on Facebook</a>
+
+			<div class="image_scrollable" id="image_scrollable">
+						<div class="items">
+							<img src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
+							<img src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
+							<img src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
+							<img src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
+							<img src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
+							<img src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
+							<img src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
+							<img src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
+							
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<script language="javascript">
+	$(function() {
+		$(".image_scrollable").scrollable({
+			prev: ".image_prev",
+			next: ".image_next"
+		});
+
+		$(".scrollable").scrollable({
+			prev: ".content_prev",
+			next: ".content_next"
+		});
+
+
+
+
+		var current_page;
+		current_page = 1;
+		$("#next_link").bind('click', function(e) {
+			if(current_page < 3) {
+				current_page += 1;
+				alert(current_page);
+			}
+		});
+
+		$("#prev_link").bind('click', function(e) {
+			if(current_page > 1) {
+				current_page -= 1;
+				alert(current_page);
+			}
+		});
+
+	});
+
+	</script>
+
+
+</body>
+</html>
