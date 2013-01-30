@@ -7,16 +7,22 @@
 	width: 1200px;
 	height: 800px;
 	background-color: #FFC;
+	text-align: center;
 }
 
-body {
+#left_gutter {
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	float:left;
+	display: inline;
 }
 
 /*
 root element for the scrollable.  when scrolling occurs this
 element stays still.
 */
-.scrollable {
+.page_scrollable {
   /* required settings */
   position:relative;
   overflow:hidden;
@@ -24,24 +30,25 @@ element stays still.
   height:800px;
 }
  
+.page_items div.item {
+  float:left;
+}
+
 /*
 root element for scrollable items. Must be absolutely positioned
 and it should have a extremely large width to accommodate scrollable
 items.  it's enough that you set width and height for the root element
 and not for this element.
 */
-.scrollable .items {
+.page_items .items {
   /* this cannot be too large */
   width:20000em;
   position:absolute;
 }
  
-/*
-a single item. must be floated in horizontal scrolling.  typically,
-this element is the one that *you* will style the most.
-*/
-.items div {
-  float:left;
+
+.clear {
+	clear: both;
 }
 
 
@@ -74,6 +81,6 @@ and not for this element.
 a single item. must be floated in horizontal scrolling.  typically,
 this element is the one that *you* will style the most.
 */
-.items div {
+.image_items div.item {
   float:left;
 }

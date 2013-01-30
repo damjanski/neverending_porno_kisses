@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">
-
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,56 +7,90 @@
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Billy Kimble">
 	<!-- Date: 2013-01-23 -->
-
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="stylesheets/ui-lightness/jquery-ui-1.10.0.custom.min.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-
 </head>
 <body>
-
-
 	<div style="margin:0 auto; width: 90%; height:100%;" id="content">
 		<!-- "previous page" action -->
 		<a class="content_prev">previou</a>
 		<!-- "next page" action -->
 		<a class="content_next">next</a>
 		<!-- root element for scrollable -->
-		<div class="scrollable" id="scrollable">
+
+		<div class="page_scrollable" id="scrollable">
+			<img src="images/pkisses_button-twitter.png" />
+			<img src="images/pkisses_button-twitter_overlay.png" />
+			<img src="images/pkisses_button-facebook.png" />
+			<img src="images/pkisses_button-facebook_overlay.png" />
+
+			<span id="left_gutter">
+				rewwrerew
+			</span>
 
 			<!-- root element for the items -->
-			<div class="items">
+			<div class="page_items">
 
 				<!-- 1-5 -->
-				<div class="page" id="page1">
-					page1
+				<div class="page item" id="page1">
+					<div>
+						<img src="images/pkisses_logo.png" />
+					</div>
+					<div id="welcome_text">
+						fwererw
+					</div>
+					<span id="enter_button">	
+						<img src="images/pkisses_button-enter.png" />
+						<img src="images/pkisses_button-enter_overlay.png" />
+					</span>
 				</div>
 
 				<!-- 5-10 -->
-				<div class="page" id="page2">
+				<div class="page item" id="page2">
+					<div>
+						<img src="images/pkisses_logo.png" />
+					</div>
+					<div id="text_content">
+						our way to say\
+					</div>
+
+					<div id="card">
+						<img src="images/pkisses_valentines-card.png" />					
+					</div>
+
+					<img src="images/fb-share-pic.jpg" />
+					<img src="images/pkisses_button-arrow_left.png" />
+					<img src="images/pkisses_button-arrow_left_overlay.png" />
+					<img src="images/pkisses_button-arrow_right.png" />
+					<img src="images/pkisses_button-arrow_right_overlay.png" />
+
 					page2
 				</div>
 
 				<!-- 10-15 -->
-				<div class="page" id="page3">
+				<div class="page item" id="page3">
+
+					<img src="images/pkisses_button-send.png" />
+					<img src="images/pkisses_button-send_overlay.png" />
+
 					<a class="image_prev">previous image</a>
 					<!-- "next page" action -->
 					<a class="image_next">next image</a>
 
-<script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><a rel="nofollow" href="http://www.facebook.com/share.php?u=<;url>" onclick="return fbs_click()" target="_blank">Share on Facebook</a>
+					<script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><a rel="nofollow" href="http://www.facebook.com/share.php?u=<;url>" onclick="return fbs_click()" target="_blank">Share on Facebook</a>
 
-			<div class="image_scrollable" id="image_scrollable">
+					<div class="image_scrollable" id="image_scrollable">
 						<div class="items">
-							<img src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
-							<img src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
-							<img src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
-							<img src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
-							<img src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
-							<img src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
-							<img src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
-							<img src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
-							
+							<img src="images/http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
+							<img src="images/http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
+							<img src="images/http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
+							<img src="images/http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
+							<img src="images/http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg" />
+							<img src="images/http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg" />
+							<img src="images/http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg" />
+							<img src="images/http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg" />
+
 						</div>
 					</div>
 
@@ -65,6 +98,8 @@
 
 			</div>
 
+		</div>
+		<div id="right_gutter">
 		</div>
 
 	</div>
