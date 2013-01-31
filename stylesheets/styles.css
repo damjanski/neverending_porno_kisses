@@ -1,86 +1,108 @@
-#content {
-	width: 1200px;
-	background-color: red;
-}
-
-.page {
-	width: 1200px;
-	height: 800px;
-	background-color: #FFC;
+.content {
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
 
-#left_gutter {
-	width: 50px;
-	height: 50px;
-	background-color: blue;
-	float:left;
+body {
+	background-color: #FFC;
+}
+body.pictures {
+	background-color: #000;
+}
+
+.enter_button {
+	margin-left: auto;
+	margin-right: auto;
+	width: 175px;
+	height: 47px;
+	background: url('../images/pkisses_button-enter.png');
+}
+.enter_button_hover {
+	background: url('../images/pkisses_button-enter_overlay.png');
+}
+
+
+.fb_button {
 	display: inline;
+	float: right;
+	width: 54px;
+	height: 49px;
+	background: url('../images/pkisses_button-facebook.png');	
+}
+.fb_button_hover {
+	display: inline;
+	float: right;
+
+	width: 54px;
+	height: 49px;
+	background: url('../images/pkisses_button-facebook_overlay.png');
+}
+.twitter_button {
+	display: inline;
+	float: right;
+
+	width: 54px;
+	height: 49px;
+	background: url('../images/pkisses_button-twitter.png');
+}
+.twitter_button_hover {
+	display: inline;
+	float: right;
+	width: 54px;
+	height: 49px;
+	background: url('../images/pkisses_button-twitter_overlay.png');
 }
 
-/*
-root element for the scrollable.  when scrolling occurs this
-element stays still.
-*/
-.page_scrollable {
-  /* required settings */
-  position:relative;
-  overflow:hidden;
-  width: 1200px;
-  height:800px;
-}
- 
-.page_items div.item {
-  float:left;
+.gutter {
+	z-index: 999;
+	width: 32px;
+	height: 45px;
+	margin-top: 300px;
 }
 
-/*
-root element for scrollable items. Must be absolutely positioned
-and it should have a extremely large width to accommodate scrollable
-items.  it's enough that you set width and height for the root element
-and not for this element.
-*/
-.page_items .items {
-  /* this cannot be too large */
-  width:20000em;
-  position:absolute;
+.left_gutter {
+	float:left;
+	position: absolute;
 }
- 
-
-.clear {
-	clear: both;
+.right_gutter {
+	float:right;
+	margin-left: 992px;
+	position: absolute;
 }
 
-
-
-/*
-root element for the scrollable.  when scrolling occurs this
-element stays still.
-*/
-.image_scrollable {
-  /* required settings */
-  position:relative;
-  overflow:hidden;
-  width: 104px;
-  height:90px;
+.header_controls {
+	width: 1024px;	
 }
- 
-/*
-root element for scrollable items. Must be absolutely positioned
-and it should have a extremely large width to accommodate scrollable
-items.  it's enough that you set width and height for the root element
-and not for this element.
-*/
-.image_scrollable .items {
-  /* this cannot be too large */
-  width:20000em;
-  position:absolute;
+.container {
+	width: 1024px;
+	height: 768px;
 }
- 
-/*
-a single item. must be floated in horizontal scrolling.  typically,
-this element is the one that *you* will style the most.
-*/
-.image_items div.item {
-  float:left;
+
+.page_scroll {
+	position:relative;
+	overflow:hidden;
+	width: 1024px;
+	height:800px;	
+}
+
+.page_scroll div#pages {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+
+}
+
+div#pages .page  {
+	width: 1024px;
+	height: 768px;
+	float:left;
+	padding-top: 100px;
+}
+
+div#pages .pic  {
+	width: 1024px;
+	height: 768px;
+	float:left;
 }
