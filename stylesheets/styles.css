@@ -2,16 +2,27 @@
 	width: 1024px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+}
+
+@font-face {
+    font-family: georgia_font;
+    src: local(georgia_font), url('../fonts/Georgia.ttf') format('truetype');
 }
 
 body {
-	background-color: #FFC;
+	background-color: #FC9;
+	font-family: georgia_font;
 }
 body.pictures {
 	background-color: #000;
 }
 
+#text_content {
+  padding-top: 52px;
+  padding-bottom: 52px;  
+  font-size: 20px;
+  color: #721f19;
+}
 .enter_button {
 	margin-left: auto;
 	margin-right: auto;
@@ -22,7 +33,6 @@ body.pictures {
 .enter_button_hover {
 	background: url('../images/pkisses_button-enter_overlay.png');
 }
-
 
 .fb_button {
 	display: inline;
@@ -39,10 +49,10 @@ body.pictures {
 	height: 49px;
 	background: url('../images/pkisses_button-facebook_overlay.png');
 }
+
 .twitter_button {
 	display: inline;
 	float: right;
-
 	width: 54px;
 	height: 49px;
 	background: url('../images/pkisses_button-twitter.png');
@@ -54,26 +64,49 @@ body.pictures {
 	height: 49px;
 	background: url('../images/pkisses_button-twitter_overlay.png');
 }
+.arrow_right {
+	width: 32px;
+	height: 47px;
+	background: url('../images/pkisses_button-arrow_right.png');
+}
+.arrow_right_hover {
+	width: 32px;
+	height: 47px;
+	background: url('../images/pkisses_button-arrow_right_overlay.png');
+}
+.arrow_left {
+	width: 32px;
+	height: 47px;
+	background: url('../images/pkisses_button-arrow_left.png');
+}
+.arrow_left_hover {
+	width: 32px;
+	height: 47px;
+	background: url('../images/pkisses_button-arrow_left_overlay.png');
+}
 
 .gutter {
+  margin: 0px;
+  padding: 0px;
 	z-index: 999;
 	width: 32px;
-	height: 45px;
+	height: 500px;
 	margin-top: 300px;
+	position: absolute;
 }
 
 .left_gutter {
-	float:left;
-	position: absolute;
 }
+
 .right_gutter {
-	float:right;
-	margin-left: 992px;
-	position: absolute;
+  margin-left: 992px;
 }
 
 .header_controls {
 	width: 1024px;	
+	height: 80px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .container {
 	width: 1024px;
@@ -85,6 +118,9 @@ body.pictures {
 	overflow:hidden;
 	width: 1024px;
 	height:800px;	
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
 }
 
 .page_scroll div#pages {
@@ -98,7 +134,7 @@ div#pages .page  {
 	width: 1024px;
 	height: 768px;
 	float:left;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 div#pages .pic  {
