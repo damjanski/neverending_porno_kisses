@@ -6,6 +6,9 @@ $(function() {
   $(".fb_button").hover(function(){
     $(this).toggleClass("fb_button_hover");
   });
+  $(".send_button").hover(function(){
+    $(this).toggleClass("send_button_hover");
+  });
   $(".twitter_button").hover(function(){
     $(this).toggleClass("twitter_button_hover");
   });
@@ -17,6 +20,15 @@ $(function() {
   });
   $(".page_scroll").scrollable({
     prev: ".page_prev",
-    next: ".page_next"
+    next: ".page_next",
+	onBeforeSeek: function(e,r) {
+		// alert(e.target.className)
+		var api = $(".page_scroll").data("scrollable")
+		if (r > api.getSize() - 1) {
+			document.location.href = "send.html";
+		}
+	}
   });
+
+
 });
